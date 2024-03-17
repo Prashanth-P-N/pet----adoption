@@ -1,4 +1,0 @@
-console.log(ourTmperature)
-
-
-start()
