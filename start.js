@@ -10,6 +10,7 @@ async function petsArea() {
   console.log(petsData)
   petsData.forEach(pet => {
     const clone = template.content.cloneNode(true)
+    clone.querySelector("h3").textContent = pet.name
     wrapper.appendChild(clone)
   });
 
