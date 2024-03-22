@@ -1,4 +1,4 @@
-const template = document.querySelector("# pet-card-templeate")
+const template = document.querySelector("#pet-card-templeate")
 const wrapper = document.createDocumentFragment()
 
 async function start() {
