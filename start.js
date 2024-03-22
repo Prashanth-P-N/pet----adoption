@@ -12,8 +12,8 @@ async function start() {
 start()
 
 async function petsArea() {
-  const petspromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
-  const petsData = await petspromise.json()
+  const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+  const petsData = await petsPromise.json()
   console.log(petsData)
 
 }
