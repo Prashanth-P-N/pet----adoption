@@ -14,7 +14,12 @@ start()
 async function petsArea() {
   const petsPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
   const petsData = await petsPromise.json()
-  console.log(petsData)
+  petsData.forEach(pet => {
+    const clone = template.content.cloneNode(true)
+    wrapper.appendChild(clone)
+    clone.querySelector("h3").textContent = pet.name
+  })
+  document.querySelector(".list-of-pets").appendChild(wrapper)
 
 }
-petsArea()
+petsArea() 
